@@ -6,50 +6,25 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
 <body ng-app="myApp">
-
-  <!-- <a href="#/">Main</a>
+<div >
+   <a href="#/">Main</a>
 
   <a href="#london">City 1</a>
-  <a href="#paris">City 2</a> -->
-<div ng-controller="twoWayBindCtl">
-  <input type="text" ng-model="greetings"/>
-  <br><br>
-  {{greetings}}
-    <br><br>
-  {{message}}
+  <a href="#paris">City 2</a>
 
-  <table>
-    <thead>
-      <tr>
-         <th>Name</th>
-         <th>Country</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat = "x in names">
-           <td>{{x.name}}</td>
-            <td>{{x.country}}</td>
-      </tr>
-    </tbody>
-  </table>
-<!--
- <li ng-repeat="x in names">
-   {{ x.name + ', ' + x.country }}
- </li> -->
+    <p>Click on the links.</p>
+  </div>
+  <!-- TODO: Two Way Binding-->
 
-
-</div>
   <!-- <br/><br/>
          {{message}} -->
            <!-- <br/><br/> -->
 
 
-  <!-- <p>Click on the links.</p>
-<div ng-view></div> -->
-<!-- <script src="route/routeScript.js"> </script> -->
- <!-- <script src="controllers/londonCtl.js"> </script>
-<script src="controllers/mainCtl.js"> </script>
-<script src="controllers/parisCtl.js"> </script> -->
-<script src="controllers/twoWayBindCtl.js"> </script>
+<div ng-view></div>
+<script src="route/routeScript.js"> </script>
+ <script src="controllers/londonCtl.js"> </script>
+<script src="controllers/parisCtl.js"> </script>
+
  </body>
  </html>

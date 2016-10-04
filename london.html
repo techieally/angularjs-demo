@@ -1,4 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="myApp">
 <h1>London</h1>
 <h3>London is the capital city of England.</h3>
 <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
 <p>{{msg}}</p>
+<div ng-controller="londonCtrl">
+  <input type="text" ng-model="greetings"/>
+  <br><br>
+  {{greetings}}
+    <br><br>
+  {{message}}
+<!-- TODO: Ng-repeat Logic -->
+  <table>
+    <thead>
+      <tr>
+         <th>Name</th>
+         <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat = "x in names">
+           <td>{{x.name}}</td>
+            <td>{{x.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+ <!-- <li ng-repeat="x in names">
+   {{ x.name + ', ' + x.country }}
+ </li> -->
+
+
+</div>
+</body>
+</html>
